@@ -22,9 +22,9 @@ When using the heap with more complex types, you have to provide a custom compar
 
     var heap = zurv.BinHeap();
 
-    heap.compare(function(heap, indexA, indexB)) {
+    heap.compare(function(heap, indexA, indexB) {
       return heap[indexB].value - heap[indexA].value;
-    };
+    });
 
     heap.push({ text: "foo", value: 71});
     heap.push({ text: "bar", value: 6});
